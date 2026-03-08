@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>心语恋空间</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-bg" aria-hidden="true"></div>
+    <div class="petals" aria-hidden="true"></div>
+
+    <main class="scene">
+      <header class="mast">
+        <h1 class="mast__title">心语恋空间</h1>
+        <p class="mast__sub">记录我们爱情的每一个瞬间</p>
+      </header>
+
+      <section class="timer" aria-label="Elapsed time">
+        <div class="timer__card">
+          <p class="timer__label">我们携手走过</p>
+          <p class="timer__value" data-elapsed>--天 --小时 --分钟 --秒</p>
+          <p class="timer__start">从 2025-06-24 开始</p>
+        </div>
+      </section>
+
+      <section class="pair" aria-label="Couple">
+        <div class="pair__wrap">
+          <img
+            class="pair__avatar"
+            src="photos/avatar-dog.png"
+            alt="小狗头像"
+            loading="lazy"
+          />
+          <div class="pair__heart" aria-hidden="true">
+            <span>❤</span>
+          </div>
+          <img
+            class="pair__avatar"
+            src="photos/avatar-pig.png"
+            alt="小猪头像"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <section class="menu" aria-label="Menu">
+        <a class="tile" href="#" aria-label="我们的故事" data-open-overlay="story">
+          <div class="tile__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M7 4.5h10a2 2 0 0 1 2 2V19a1 1 0 0 1-1.4.92L12 17.5 6.4 19.92A1 1 0 0 1 5 19V6.5a2 2 0 0 1 2-2Z"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M9 8h6M9 11h6"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <div class="tile__text">
+            <h3>我们的故事</h3>
+            <p>记录我们从相遇到相爱的点点滴滴</p>
+          </div>
+        </a>
+
+        <a class="tile" href="#" aria-label="甜蜜相册" data-open-album="sweet">
+          <div class="tile__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M7 7h10a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M9 7l1.3-2h3.4L15 7"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+              />
+              <path
+                d="M12 11.2a2.3 2.3 0 1 1 0 4.6 2.3 2.3 0 0 1 0-4.6Z"
+                stroke="currentColor"
+                stroke-width="1.8"
+              />
+            </svg>
+          </div>
+          <div class="tile__text">
+            <h3>甜蜜相册</h3>
+            <p>珍藏每一个美好瞬间</p>
+          </div>
+        </a>
+
+        <a class="tile" href="#" aria-label="重要时刻" data-open-overlay="moments">
+          <div class="tile__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.4A4 4 0 0 1 19 10c0 5.5-7 10-7 10Z"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="tile__text">
+            <h3>重要时刻</h3>
+            <p>纪念日、旅行和特别日子</p>
+          </div>
+        </a>
+
+        <a class="tile" href="#" aria-label="爱的留言" data-open-overlay="messages">
+          <div class="tile__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M6.5 18.5 5 21l2.6-1.3A9 9 0 1 0 6.5 18.5Z"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M8.8 10.5h6.4M8.8 13.6h4.2"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <div class="tile__text">
+            <h3>爱的留言</h3>
+            <p>写下想对彼此说的话</p>
+          </div>
+        </a>
+
+        <a class="tile" href="#" aria-label="旅行地图" data-open-overlay="map">
+          <div class="tile__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M12 21s6-5.4 6-11a6 6 0 1 0-12 0c0 5.6 6 11 6 11Z"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12 10.3a1.9 1.9 0 1 1 0 3.8 1.9 1.9 0 0 1 0-3.8Z"
+                stroke="currentColor"
+                stroke-width="1.8"
+              />
+            </svg>
+          </div>
+          <div class="tile__text">
+            <h3>旅行地图</h3>
+            <p>一起走过的城市与风景</p>
+          </div>
+        </a>
+
+        <a class="tile" href="#" aria-label="全景相册">
+          <div class="tile__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path
+                d="M6 7h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M8.2 16.2 11 13.3l2 1.9 2.9-3.2 2 4.2"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M9.4 10.4a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"
+                fill="currentColor"
+              />
+            </svg>
+          </div>
+          <div class="tile__text">
+            <h3>全景相册</h3>
+            <p>沉浸式的视觉回忆</p>
+          </div>
+        </a>
+      </section>
+
+      <section class="overlay" data-album-overlay hidden>
+        <div class="overlay__backdrop" data-album-close aria-hidden="true"></div>
+        <div class="overlay__panel" role="dialog" aria-modal="true" aria-label="甜蜜相册">
+          <header class="overlay__head">
+            <div class="overlay__meta">
+              <h2 class="overlay__title">甜蜜相册</h2>
+              <p class="overlay__sub">把心动都装进来。</p>
+            </div>
+            <button class="overlay__close" type="button" data-album-close aria-label="关闭">
+              ×
+            </button>
+          </header>
+
+          <div class="album-view" data-album="sweet" data-count="11">
+            <div class="album-view__stage" aria-label="Viewer">
+              <button class="album-view__nav album-view__nav--prev" type="button" data-album-prev aria-label="上一张">
+                ‹
+              </button>
+              <figure class="album-view__figure">
+                <img class="album-view__img" alt="相册图片" />
+              </figure>
+              <button class="album-view__nav album-view__nav--next" type="button" data-album-next aria-label="下一张">
+                ›
+              </button>
+            </div>
+            <p class="album-view__caption" data-album-caption></p>
+            <div class="album-view__bar">
+              <div class="album-view__counter" data-album-counter aria-live="polite"></div>
+              <div class="album-view__tips">左右方向键切换，Esc 关闭</div>
+            </div>
+            <div class="album-strip" data-album-strip aria-label="Thumbnails"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="overlay" data-overlay="moments" hidden>
+        <div class="overlay__backdrop" data-close-overlay aria-hidden="true"></div>
+        <div class="overlay__panel" role="dialog" aria-modal="true" aria-label="重要时刻">
+          <header class="overlay__head">
+            <div class="overlay__meta">
+              <h2 class="overlay__title">Moments Capsule</h2>
+              <p class="overlay__sub">点击抽卡 · 收集我们的高光</p>
+            </div>
+            <button class="overlay__close" type="button" data-close-overlay aria-label="关闭">
+              ×
+            </button>
+          </header>
+          <div class="moments-view">
+            <div class="moments-grid">
+              <!-- Template 1 -->
+              <div class="flip-card">
+                <div class="flip-card__inner">
+                  <div class="flip-card__front">
+                    <div class="flip-card__icon">💡</div>
+                    <p class="flip-card__label">第一次心动</p>
+                  </div>
+                  <div class="flip-card__back">
+                    <p class="flip-card__date">2025.05.04</p>
+                    <p class="flip-card__desc">第二次的见面，那一天听你聊自己就已经喜欢上你了</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Template 2 -->
+              <div class="flip-card">
+                <div class="flip-card__inner">
+                  <div class="flip-card__front">
+                    <div class="flip-card__icon">🎬</div>
+                    <p class="flip-card__label">第一次约会</p>
+                  </div>
+                  <div class="flip-card__back">
+                    <p class="flip-card__date">2025.06.11</p>
+                    <p class="flip-card__desc">第一次徒步，虽然那天没啥景色草也很荒，但那是我们第一次约会，喜欢我猪~</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Template 3 -->
+              <div class="flip-card">
+                <div class="flip-card__inner">
+                  <div class="flip-card__front">
+                    <div class="flip-card__icon">🎂</div>
+                    <p class="flip-card__label">第一个生日</p>
+                  </div>
+                  <div class="flip-card__back">
+                    <p class="flip-card__date">2025.09.23</p>
+                    <p class="flip-card__desc">第一次出去一起住，是我最开心的生日！有你陪我过，真的很开心</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Template 4 -->
+              <div class="flip-card">
+                <div class="flip-card__inner">
+                  <div class="flip-card__front">
+                    <div class="flip-card__icon">🌟</div>
+                    <p class="flip-card__label">那个瞬间</p>
+                  </div>
+                  <div class="flip-card__back">
+                    <p class="flip-card__date">2025.12.31</p>
+                    <p class="flip-card__desc">这是我们跨的第一个年，以后还要跨更多年~ 要跟猪在一起很久</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Template 5 -->
+              <div class="flip-card">
+                <div class="flip-card__inner">
+                  <div class="flip-card__front">
+                    <div class="flip-card__icon">✈️</div>
+                    <p class="flip-card__label">第一次旅行</p>
+                  </div>
+                  <div class="flip-card__back">
+                    <p class="flip-card__date">2026.02.12-02.16</p>
+                    <p class="flip-card__desc">终于跟你坐上了期待已久的邮轮，好高兴，希望今年年底我还要跟猪坐！</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="overlay" data-overlay="map" hidden>
+        <div class="overlay__backdrop" data-close-overlay aria-hidden="true"></div>
+        <div class="overlay__panel" role="dialog" aria-modal="true" aria-label="旅行地图">
+          <header class="overlay__head">
+            <div class="overlay__meta">
+              <h2 class="overlay__title">旅行地图</h2>
+              <p class="overlay__sub">我们一起走过的澳洲城市</p>
+            </div>
+            <button class="overlay__close" type="button" data-close-overlay aria-label="关闭">
+              ×
+            </button>
+          </header>
+          <div class="map-view">
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.83615175402!2d151.2065!3d-33.8587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae6809c91f1b%3A0x8683e33f671c356!2sOverseas%20Passenger%20Terminal!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="map-info">
+              <p>📍 我们一起走过的城市已在地图中标注</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="overlay" data-overlay="story" hidden>
+        <div class="overlay__backdrop" data-close-overlay aria-hidden="true"></div>
+        <div class="overlay__panel" role="dialog" aria-modal="true" aria-label="我们的故事">
+          <header class="overlay__head">
+            <div class="overlay__meta">
+              <h2 class="overlay__title">我们的故事</h2>
+              <p class="overlay__sub">记录我们走过的点点滴滴</p>
+            </div>
+            <button class="overlay__close" type="button" data-close-overlay aria-label="关闭">
+              ×
+            </button>
+          </header>
+          <div class="story-view">
+            <div class="story-timeline">
+              <!-- Story Entry 1 -->
+              <div class="story-item">
+                <div class="story-card">
+                  <h3 class="story-card__title">异地恋 2025年10月</h3>
+                  <p class="story-card__content">
+                    猪猪回国了，变成了异地恋，送完猪去机场回到你家的时候哥哥真的感觉很空虚，难过，不知道我的猪什么时候能回来，那一次体会到了每次我走的时候我的猪也会有这种感觉。那次之后，每次我走的时候上车我就给猪一直发消息，不让我的猪空虚。相信不久之后我们就能真正的一直住一起，不分开！
+                  </p>
+                </div>
+                <div class="story-date">2025年10月</div>
+              </div>
+
+              <!-- Story Entry 2 -->
+              <div class="story-item">
+                <div class="story-card">
+                  <h3 class="story-card__title">第一次吵架 2025年11月</h3>
+                  <p class="story-card__content">
+                    我们那天异地了快一个月吵了第一回架，虽然那天我们两很伤心都很难受，但哥哥往回看发现猪猪说“我比我想象的更喜欢你，关心程度也更多，那时对我是几乎100的信任”哥哥真的很开心，也自责自己没有做好，对猪猪说了一句公平让猪伤心了好久，哥哥真的很难过，以后不会再说一次这个话了！事后猪猪还发去抓娃娃的店哄哥哥开心的话，给哥哥感动哭了，我怎么有对我这么好的女朋友，我想好好保护我的猪，谁都不能欺负她！包括我自己
+                  </p>
+                </div>
+                <div class="story-date">2025年11月</div>
+              </div>
+
+              <!-- Story Entry 3 -->
+              <div class="story-item">
+                <div class="story-card">
+                  <h3 class="story-card__title">猪猪回来啦 2025年12月</h3>
+                  <p class="story-card__content">
+                    我的猪猪终于回来了，每天隔着3个小时的时差，尤其是晚上特别不方便，因为我跟猪猪每次都要晚安然后一起入睡，猪猪在国内就没法这样，每次她要吃饭我就要睡了，分享不了好多喜悦。不过我的猪回来了，要跟她干好多好多事，想跟她去徒步，想给她去拍好多好多美照（我的猪全世界最美！），想跟她吃好多好吃的饭饭，想给猪亲懵过去！嘻嘻<br><br>我的猪还给我买了好多小礼物，哥哥好喜欢，每次猪猪出远门都会给哥哥带一点小礼物，凯恩斯回来也是，真是贴心小猪~有猪的哥哥就是全世界最幸福的人
+                  </p>
+                </div>
+                <div class="story-date">2025年12月</div>
+              </div>
+
+              <!-- Story Entry 4 -->
+              <div class="story-item">
+                <div class="story-card">
+                  <h3 class="story-card__title">跨的第一个年 2026年1月</h3>
+                  <p class="story-card__content">
+                    这是我们一起跨的第一个年，愿年年有今日，岁岁有今朝。新年快乐，我的猪！我给猪猪拍了好多美照呢这个月，还拍了不少合照，希望我的猪能喜欢。我们的距离靠的越来越近拉，去了好多次图书馆呢，还去了springvale吃了非常好吃的越南包和粉，我还要发掘更多好吃的给猪猪，猪猪值得吃最多好吃的！
+                  </p>
+                </div>
+                <div class="story-date">2026年1月</div>
+              </div>
+
+              <!-- Story Entry 5 -->
+              <div class="story-item">
+                <div class="story-card">
+                  <h3 class="story-card__title">悉尼邮轮记 2026年2月</h3>
+                  <p class="story-card__content">
+                    第一次旅游就是顶级享受呢，简直不要太幸福了，就是时间太短了才算2天2夜，下回订个更久的！我跟猪配合的简直不要太完美，谁说的旅游是检验情侣的最好标准，那我跟猪不是天生一对(●'◡'●) 还跟猪发了第一段公开朋友圈，幸福。猪猪还找到了第一份小工作，是一个非常好的开始！之后肯定会越来越好的，哥哥对你有信心，加油棒棒居*
+                  </p>
+                </div>
+                <div class="story-date">2026年2月</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="overlay" data-overlay="messages" hidden>
+        <div class="overlay__backdrop" data-close-overlay aria-hidden="true"></div>
+        <div class="overlay__panel" role="dialog" aria-modal="true" aria-label="爱的留言">
+          <header class="overlay__head">
+            <div class="overlay__meta">
+              <h2 class="overlay__title">爱的留言</h2>
+              <p class="overlay__sub">写下想对彼此说的话</p>
+            </div>
+            <button class="overlay__close" type="button" data-close-overlay aria-label="关闭">
+              ×
+            </button>
+          </header>
+          <div class="messages-view">
+            <div class="messages-list">
+              <!-- Message 1 -->
+              <div class="message-card">
+                <div class="message-card__content">
+                  <p class="message-card__user">我说：</p>
+                  <p class="message-card__text">明天早上来接我</p>
+                  <p class="message-card__time">2025/9/18 01:45:35</p>
+                </div>
+              </div>
+              <!-- Message 2 -->
+              <div class="message-card">
+                <div class="message-card__content">
+                  <p class="message-card__user">我说：</p>
+                  <p class="message-card__text">晚上吃什么</p>
+                  <p class="message-card__time">2025/9/18 01:40:32</p>
+                </div>
+              </div>
+              <!-- Message 3 -->
+              <div class="message-card">
+                <div class="message-card__content">
+                  <p class="message-card__user">我说：</p>
+                  <p class="message-card__text">axc</p>
+                  <p class="message-card__time">2025/9/18 01:25:32</p>
+                </div>
+              </div>
+            </div>
+            <div class="messages-form">
+              <textarea class="messages-input" placeholder="写下你想对TA说的话..."></textarea>
+              <button class="messages-submit" type="button">发送留言</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="credit">
+        <p>今天是我们故事里很重要的一天。</p>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
